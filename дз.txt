@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+	    int c = sc.nextInt();
+	    int d = sc.nextInt();
+	    int e = 4;
+	    String names = "Катя";
+	    double f = 12.6;
+	    boolean g1 = true;
+	    boolean g2 = false;
+	    char h1 = 'ж';
+	    char h2 = '\u0436';                                                                       
+    System.out.println(a * (b + (c/d)));
+    System.out.println(sum_in_range(4, 5));
+    System.out.println(int_count(5));
+    System.out.println(int_count2(-2));
+    System.out.println("Привет " + names + "!");
+	}
+	public static boolean sum_in_range(int n1, int n2){
+	    int x;
+	    x = n1 + n2;
+	    if ((x >= 10) && (x <=20)){
+	        
+	        return true;
+        }else{
+            return false;
+        }
+    }
+    public static String int_count(int n3){
+	    int y;
+	    y = n3;
+	    if (y >= 0){
+	        return "Число положительное";
+	    }
+	    else{
+            return "Число отрицательное"; 
+	    }
+	}
+	
+	public static boolean int_count2(int n4){
+	    int z;
+	    z = n4;
+	    if (z < 0) return true;
+	    else{
+	        return false;
+	    }
+    }
+  
+}
